@@ -198,43 +198,39 @@
 </section>
 
 <section id="contact" class="extra-section">
-    <!-- Background Video -->
+    <!-- Background Video - Spiderman -->
     <video autoplay muted loop playsinline class="section-bg-video contact-video-filter">
         <source src="Justine/Spiderman.mp4" type="video/mp4">
     </video>
     <div class="section-overlay"></div>
 
     <div class="contact-wrapper" data-aos="fade-up">
-        <!-- Pinalitan ang action para mag-send sa Formspree (Email) -->
-        <form action="https://formspree.io/f/xeenrypn" method="POST" class="contact-styled-box">
+        <!-- GAMITIN NATIN ANG FORMSUBMIT (Libre ang redirect dito) -->
+        <form action="https://formsubmit.co/kingaljons@gmail.com" method="POST" class="contact-styled-box">
+
+            <!-- REDIRECT: Dito siya pupunta pagka-submit. Gamitin ang LIVE LINK mo -->
+            <input type="hidden" name="_next" value="https://justine-byte-prog.github.io/my-portfolio/thankyou.html">
             
-            <!-- ITO ANG NAG-UUTOS NA PUMUNTA SA THANKYOU.HTML PAGKASEND -->
-            <form action="https://formspree.io/f/xeenrypn" method="POST" class="contact-styled-box">
-    
-    <!-- ITO ANG PINAKA-MAHALAGA: DAPAT SAKTO ANG URL -->
-    <input type="hidden" name="_next" value="https://justine-byte-prog.github.io/my-portfolio/thankyou.html">
-    
-    <!-- Para hindi lumabas yung "I am not a robot" check ni Formspree -->
-    <input type="hidden" name="_captcha" value="false">
+            <!-- Iwas sa robot check para diretso sa thankyou.html -->
+            <input type="hidden" name="_captcha" value="false">
 
-    <h1>Contact <span>Me</span></h1>
-    
-    <div class="input-row">
-        <input type="text" name="First Name" placeholder="First Name" required>
-        <input type="text" name="Last Name" placeholder="Last Name" required>
-    </div>
+            <h1>Contact <span>Me</span></h1>
+            
+            <div class="input-row">
+                <input type="text" name="First Name" placeholder="First Name" required>
+                <input type="text" name="Last Name" placeholder="Last Name" required>
+            </div>
 
-    <div class="input-row">
-        <input type="email" name="Email" placeholder="Email" required>
-        <input type="text" name="Mobile" placeholder="Mobile" required>
-    </div>
+            <div class="input-row">
+                <input type="email" name="Email" placeholder="Email" required>
+                <input type="text" name="Mobile" placeholder="Mobile" required>
+            </div>
 
-    <textarea name="Message" placeholder="Type Your Message Here..." required></textarea>
+            <textarea name="Message" placeholder="Type Your Message Here..." required></textarea>
 
-    <div class="btn">
-        <button type="submit">Send</button>
-    </div>
-</form>
+            <div class="btn">
+                <button type="submit">Send</button>
+            </div>
         </form>
     </div>
 </section>
