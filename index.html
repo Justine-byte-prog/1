@@ -209,25 +209,32 @@
         <form action="https://formspree.io/f/xeenrypn" method="POST" class="contact-styled-box">
             
             <!-- ITO ANG NAG-UUTOS NA PUMUNTA SA THANKYOU.HTML PAGKASEND -->
-            <input type="hidden" name="_next" value="https://justine-byte-prog.github.io/my-portfolio/thankyou.html">
+            <form action="https://formspree.io/f/xeenrypn" method="POST" class="contact-styled-box">
+    
+    <!-- ITO ANG PINAKA-MAHALAGA: DAPAT SAKTO ANG URL -->
+    <input type="hidden" name="_next" value="https://justine-byte-prog.github.io/my-portfolio/thankyou.html">
+    
+    <!-- Para hindi lumabas yung "I am not a robot" check ni Formspree -->
+    <input type="hidden" name="_captcha" value="false">
 
-            <h1>Contact <span>Me</span></h1>
-            
-            <div class="input-row">
-                <input type="text" name="fname" placeholder="First Name" required>
-                <input type="text" name="lname" placeholder="Last Name" required>
-            </div>
+    <h1>Contact <span>Me</span></h1>
+    
+    <div class="input-row">
+        <input type="text" name="First Name" placeholder="First Name" required>
+        <input type="text" name="Last Name" placeholder="Last Name" required>
+    </div>
 
-            <div class="input-row">
-                <input type="email" name="email" placeholder="Email" required>
-                <input type="text" name="mobile" placeholder="Mobile" required>
-            </div>
+    <div class="input-row">
+        <input type="email" name="Email" placeholder="Email" required>
+        <input type="text" name="Mobile" placeholder="Mobile" required>
+    </div>
 
-            <textarea name="message" placeholder="Type Your Message Here..." required></textarea>
+    <textarea name="Message" placeholder="Type Your Message Here..." required></textarea>
 
-            <div class="btn">
-                <button type="submit">Send</button>
-            </div>
+    <div class="btn">
+        <button type="submit">Send</button>
+    </div>
+</form>
         </form>
     </div>
 </section>
